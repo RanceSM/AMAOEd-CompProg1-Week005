@@ -1,16 +1,7 @@
 /* ****************************************************************
- * @author: <your name here>
- * @app name: <your application name here>
- * @app desc: <describe the purpose of your application here>
- * @history:
- *  - <yyyy/mm/dd> | <name>
- *      -- <description>
- *      -- <description>
- *      -- <description>
- *  - <yyyy/mm/dd> | <name>
- *      -- <description>
- *      -- <description>
- *      -- <description>
+ * @author: RanceSM
+ * @app name: LaboratoryExercise04
+ * @app desc: (AMAoed) Computer Programming 1 laboratory exercise
  * ****************************************************************/
 
 #include <cstdio>
@@ -28,9 +19,24 @@ using namespace std;
 // before this "main()" function.
 //////////////////////////////////////////////////////////////////
 
-void problem1();
-void problem2();
-void problem3();
+// Write a program that accepts user’s section, and display them back with the format “*** Section: user’s section ***”
+void problem1(){
+    string section;
+    cout << "Please enter your section:\n>";
+    cin >> section;
+    cout << "*** Section: " << section << " ***" << endl;
+}
+// Write a program that accepts user’s name, password and address and display them back using the format “Hi, I am user’s name. I live at user’s address”
+void problem3(){
+    string name, password, address;
+    cout << "Name:\n>";
+    getline(cin,name);
+    cout << "Password:\n>";
+    getline(cin,password);
+    cout << "Address:\n>";
+    getline(cin,address);
+    cout << "\nHi, I am " << name << ". I live at " << address << ".\n";
+}
 
 int main() {
     // ************************** TO DO **************************
@@ -44,20 +50,4 @@ int main() {
     // ***********************************************************
     _pause();
     return EXIT_SUCCESS;
-}
-
-void problem1(){
-    cout << "\nHello\nWorld" << endl;
-}
-void problem2(){
-    cout << endl;
-    for (int i = 0; i < 10; i++){
-        cout << "Hello\nWorld" << endl;
-    }
-}
-void problem3(){
-    cout << "\nHello" << endl;
-    for (int i = 0; i < 5; i++){
-        cout << "World" << endl;
-    }
 }
